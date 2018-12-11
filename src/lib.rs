@@ -5,6 +5,17 @@
 //!
 //! This library requires Rust 2018 nightly and only works for functions, not methods.
 //!
+//! By naming a function `line__color_from_to`, one can call it like this:
+//!
+//! ```ignore
+//! args!(line(color: [1.0; 4], from: [0.0, 0.0], to: [100.0, 100.0]))
+//! ```
+//!
+//! - Double underscore after function name and before the name of the first argument
+//! - Single underscore separating arguments
+//!
+//! ### Example
+//!
 //! ```rust
 //! #![feature(concat_idents)]
 //!
