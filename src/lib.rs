@@ -28,7 +28,7 @@
 //! ```
 
 #[macro_export]
-macro_rules! args {($x:ident ( $($y:ident : $z:expr),* )) =>
+macro_rules! args {($x:ident ( $($y:ident : $z:expr),* $(,)* )) =>
     {concat_idents!($x, _, $(_,$y),*)($($z),*)}}
 
 #[cfg(test)]
@@ -50,6 +50,7 @@ mod tests {
         ) {}
 
         args!(clear(color: [1.0; 4]));
+        args!(clear(color: [1.0; 4],));
         args!(line(color: [1.0; 4], from: [0.0, 0.0], to: [100.0, 100.0]));
         args!(person(
             fname: "Homer",
