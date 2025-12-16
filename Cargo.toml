@@ -2,7 +2,7 @@
 name = "underscore_args"
 version = "0.1.2"
 authors = ["Sven Nilsen <bvssvni@gmail.com>"]
-edition = "2018"
+edition = "2024"
 keywords = ["underscore", "arguments", "named", "syntax"]
 description = "Macro for underscore named argument syntax, aka Dyon"
 license = "MIT"
@@ -12,3 +12,4 @@ documentation = "https://docs.rs/underscore_args"
 readme = "README.md"
 
 [dependencies]
+paste = "1.0.15"

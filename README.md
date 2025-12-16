@@ -1,8 +1,6 @@
 # underscore_args
 Macro for underscore named argumet syntax, aka [Dyon](https://github.com/pistondevelopers/dyon).
 
-This library requires Rust 2018 nightly and only works for functions, not methods.
-
 By naming a function `line__color_from_to`, one can call it like this:
 
 ```ignore
@@ -15,8 +13,6 @@ args!(line(color: [1.0; 4], from: [0.0, 0.0], to: [100.0, 100.0]))
 ### Example
 
 ```rust
-#![feature(concat_idents)]
-
 use underscore_args::args;
 
 #[allow(non_snake_case)]
