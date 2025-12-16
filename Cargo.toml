@@ -1,6 +1,6 @@
 [package]
 name = "underscore_args"
-version = "0.1.2"
+version = "1.0.0"
 authors = ["Sven Nilsen <bvssvni@gmail.com>"]
 edition = "2024"
 keywords = ["underscore", "arguments", "named", "syntax"]
